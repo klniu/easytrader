@@ -209,10 +209,10 @@ class HTClientTrader(ClientTrader):
             self._config.TRADE_SECURITY_CONTROL_ID,
             code
         )
-        self._type_keys(
-            self._config.TRADE_PRICE_CONTROL_ID,
-            easyutils.round_price_by_code(price, code)
-        )
+        # self._type_keys(
+        #     self._config.TRADE_PRICE_CONTROL_ID,
+        #     easyutils.round_price_by_code(price, code)
+        # )
         self._type_keys(
             self._config.TRADE_AMOUNT_CONTROL_ID,
             str(int(amount))
